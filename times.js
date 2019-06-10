@@ -26,7 +26,7 @@ $("#search").on("click", function() {
             temp.attr("id", "article");
             temp.append(tempp);
             temp.append(data.response.docs[r].byline.original);
-            $("#result").append(temp);
+            $(".result").append(temp);
             i++;
             k++;
         }
@@ -34,6 +34,6 @@ $("#search").on("click", function() {
 });
 
 $("#clear").on("click", function() {
-    $("#result").empty();
+    $(".result").empty();
     i = 1;
 })

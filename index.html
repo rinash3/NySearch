@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="styleSheet" href="Style.css"><link>
+    <link rel="styleSheet" href="Style.css">
+    <link>
     <title>Document</title>
 </head>
+
 <body>
     <h1>New York Times</h1>
-   
-    <form >
+
+    <form>
         <label>Search Parameters</label>
-        <br>
-            Search Term:<br>
-            <input type="text" name="searchterm"><br><br>
-            Number of Records to Retrieve:<br><br>
-            <input list="numbers" name="numrecords"><br><br>
-            <datalist id="numbers">
+        <br> Search Term:<br>
+        <input type="text" id="searchterm"><br><br> Number of Records to Retrieve:<br><br>
+        <input list="numbers" id="numrecords"><br><br>
+        <datalist id="numbers">
                     <option value="1">
                     <option value="5">
                     <option value="10"> 
                   </datalist>
-<br>
-            Start Year (optional):<br>
-            <input type="text" name="startYear"><br><br>
-            End Year (optional):<br>
-            <input type="text" name="endYear"><br><br>
-          </form>
-          
-          <button id="search">search</button>
-          <button id="clear">clear results</button>
-<br>
+        <br> Start Year (optional):<br>
+        <input type="text" id="start"><br><br> End Year (optional):<br>
+        <input type="text" id="end"><br><br>
+    </form>
+
+    <button id="search">search</button>
+    <button id="clear">clear results</button>
+    <br>
 
 
-          <div class="result">
-                <h3> Top Articles</h3>
+    <div id="result">
+        <h3> Top Articles</h3>
 
-          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="times.js"></script>
 </body>
+
 </html>
