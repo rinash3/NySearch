@@ -1,0 +1,47 @@
+body{
+  display:grid;
+
+}
+h1{
+  background-color: #4a90e2;
+  font-size:36px;
+  text-align: center;
+  color:white;
+  grid-column: 1/13;
+  padding:45px 45px;
+}
+
+/* the style for the input texts */
+form, input[type=text]{
+  color:black;
+  text-align: left;
+  font-size:18px;
+  display:inline-block;
+  grid-column:3/11;
+  cursor:pointer;
+}
+#search{
+  background-color: #4a90e2;
+  font-size: 18px;
+  color:white;
+  grid-column: 3/6;
+
+}
+#clear{
+  background-color: #4a90e2;
+  font-size:18px;
+  color:white;
+  grid-column: 7/10;
+}
+h3{
+ font-size: 18px;
+ color:black;
+ grid-column: 3/6;
+}
+.result{
+  grid-column: 1/11;
+  background-color: #4a90e2;
+  color:white;
+  top:55vw;
+  margin-top:5vw;
+}
