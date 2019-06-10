@@ -7,9 +7,9 @@ $("#search").on("click", function() {
     var begin = "";
     var end = "";
     if ($("#start").val().length > 0)
-        begin = "&begin_date" + $("#start").val() + "0101";
+        begin = "&begin_date=" + $("#start").val() + "0101";
     if ($("#end").val().length > 0)
-        end = "&end_date" + $("#end").val() + "1231";
+        end = "&end_date=" + $("#end").val() + "1231";
     var tUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + query + "&api-key=" + key + begin + end;
     console.log(tUrl);
     $.ajax({
